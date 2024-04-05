@@ -1,0 +1,113 @@
+/* Estilo para o tema de tom de pele claro */
+.light-theme {
+  --background-color: #f8c5c5; /* Cor de fundo do tema claro */
+  --text-color: #333; /* Cor do texto do tema claro */
+}
+
+/* Estilo para o tema de tom de pele escuro */
+.dark-theme {
+  --background-color: #5d432c; /* Cor de fundo do tema escuro */
+  --text-color: #eeb9de; /* Cor do texto do tema escuro */
+}
+
+body {
+  background-color: var(--background-color); /* Aplica a cor de fundo do tema */
+  color: var(--text-color); /* Aplica a cor do texto do tema */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 90; /* Para garantir que o cabeçalho esteja acima de outros elementos */
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  
+}
+
+#hero h1 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#services, #gallery, #contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: #ff80bf;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.cta a:hover {
+  background-color: #ff66a3;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+}
